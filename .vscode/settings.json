@@ -1,0 +1,4 @@
+{
+    "editor.suggest.selectionMode": "whenTriggerCharacter",
+    "editor.inlineSuggest.enabled": true
+}
