@@ -1,4 +1,5 @@
 {
     "editor.suggest.selectionMode": "whenTriggerCharacter",
-    "editor.inlineSuggest.enabled": true
+    "editor.inlineSuggest.enabled": true,
+    "liveServer.settings.port": 5501
 }
