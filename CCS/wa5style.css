@@ -33,6 +33,7 @@
   .card header {
     background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
     border-radius: 1.5em 1.5em 0 0;
+    color: #ccc;
   }
   
   .card footer{
@@ -47,6 +48,7 @@
   .card header,.card footer{
     height: 3em;
     padding: 1em;
+
     
   }
   .card h2, p{
@@ -64,6 +66,7 @@
   .card footer p{
     height: 1.5em;
     line-height: 3em;
+    color: bisque;
   }
   .card article{
     padding-left: 1em ;
