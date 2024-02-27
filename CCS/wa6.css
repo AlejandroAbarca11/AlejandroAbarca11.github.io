@@ -21,6 +21,7 @@ color: blanchedalmond;
 }
 .textcountry{
     width: fit-content;
+    margin: 1em 1em 1em 1em;
 
     color: blanchedalmond;
     
@@ -28,8 +29,10 @@ color: blanchedalmond;
 }
 
 .score  {   
-    width: 1em;
+    width: 1.5em;
     color: black;
     background-color:beige;
+    border-radius: .5em;
+
 
 }
