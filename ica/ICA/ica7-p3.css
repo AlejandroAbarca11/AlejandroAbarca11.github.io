@@ -1,5 +1,4 @@
 #narrowScreen{
-    color: aquamarine;
 }
 #wideScreen{
 }
@@ -8,23 +7,23 @@
 #tallScreen{
 }
 
-@media (max-with: 600px){
+@media (max-width: 600px){
     #narrowScreen{
         color: purple;
     }
 }
 
-@media (min-with:800px) {
+@media (min-width:800px) {
     #wideScreen{
         color: lightblue;
     } 
 }
-@media  (max-hight: 500px){
+@media  (max-height: 500px){
     #shortScreen{
         color: yellow;
     }
 }
-@media (min-hight :800px){
+@media (min-height :800px){
     #tallScreen{
     color: orange;
     }
