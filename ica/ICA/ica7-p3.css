@@ -1,0 +1,30 @@
+#narrowScreen{
+}
+#wideScreen{
+}
+#shortScreen{
+}
+#tallScreen{
+}
+
+@media (max-with: 600px){
+    #narrowScreen{
+        color: purple;
+    }
+}
+
+@media (min-with:800px) {
+    #wideScreen{
+        color: lightblue;
+    } 
+}
+@media  (max-hight: 500px){
+    #shortScreen{
+        color: yellow;
+    }
+}
+@media (min-hight :800px){
+    #tallScreen{
+    color: orange;
+    }
+}
