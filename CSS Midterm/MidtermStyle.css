@@ -17,7 +17,7 @@ body {
     width: 30vw;
   }
 
-  .dropdown h3{
+  .dropdown article{
     list-style: none;
     width: 100%;
     margin: 10px 10px 0px 10px;
@@ -28,7 +28,7 @@ body {
 
   }
 
-  .dropdown h3 label{
+  .dropdown article label{
     display:flex;
     flex-direction: column;
     padding: 10px;
@@ -36,7 +36,8 @@ body {
     font-weight: 500;
     cursor: pointer;
   }
-  h5{
+  span{
+    display: block;    
     font-size: 15px;
     color: rgb(73, 67, 15);
     margin: 0;
@@ -47,7 +48,7 @@ body {
     display: none;
   }
   .dropdown .content{
-    color: beige;
+    color: rgb(73, 73, 32);
     padding: 0 10px;
     line-height: 26px;
     max-height: 0px;
@@ -65,14 +66,20 @@ body {
   
 .title{
     background: linear-gradient(135deg, rgba(7, 7, 7, 0.856),rgba(255,255,255,0%));
-    height: 90vh;
+    height: fit-content;
     width: 100%;
     padding: 30px;
     margin: 0px;
     color: rgb(170, 162, 89);
     font-size: 45px;
     float: left;
-    margin-bottom: -85vh;
     
 
+}
+.title article{
+  display: flex;
+  flex-direction: column;
+  color: rgb(190, 184, 124);
+  font-size: small;
+  width: 100%;
 }
