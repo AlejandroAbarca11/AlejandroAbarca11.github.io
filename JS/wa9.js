@@ -2,7 +2,7 @@ const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
 const story = document.querySelector('.story');
 
-const storyText = "It was hot summer afternoon with 104 fahrenheit on the termometter, so :insertx: decided to go to :inserty:. When they got there,Bob started to feel pain in their tummy, :insertz: decided to give them a bucket to throuw up,  — they then started to throw up 300 pounds of watermelon. It made sence, it was summer.";
+const storyText = "It was hot summer afternoon with 104 fahrenheit on the termometter, so :insertx: decided to go to :inserty:. When they got there,Bob started to feel pain in their tummy, :insertz: decided to give them a bucket to throw up,  — they then started to throw up 300 pounds of watermelon. It made sence, it was summer.";
 const insertX = ["Willy Wonka","Big papa","Mother Nature"];
 const insertY = ["the pool","the Lake","the mall"];
 const insertZ = ["a gloryous manchild", "the pope","a biblical acurate angel"];
