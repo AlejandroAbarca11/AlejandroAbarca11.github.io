@@ -2,10 +2,10 @@ const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
 const story = document.querySelector('.story');
 
-const storyText = "It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.";
-const insertX = ["Willy the Goblin","Big Daddy","Father Christmas"];
-const insertY = ["the soup kitchen","Disneyland","the White House"];
-const insertZ = ["spontaneously combustedmelted", "into a puddle on the sidewalk","turned into a slug and crawled away"];
+const storyText = "It was hot summer afternoon with 104 fahrenheit on the termometter, so :insertx: decided to go to :inserty:. When they got there,Bob started to feel pain in their tummy, :insertz: decided to give them a bucket to throuw up,  — they then started to throw up 300 pounds of watermelon. It made sence, it was summer.";
+const insertX = ["Willy Wonka","Big papa","Mother Nature"];
+const insertY = ["the pool","the Lake","the mall"];
+const insertZ = ["a gloryous manchild", "the pope","a biblical acurate angel"];
 
 function randomValueFromArray(array){
   const random = Math.floor(Math.random()*array.length);
