@@ -17,18 +17,7 @@ function random(min, max) {
 function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
-function loop() {
-    ctx.fillStyle = "rgb(0 0 0 / 25%)";
-    ctx.fillRect(0, 0, width, height);
-  
-    for (const ball of balls) {
-    ball.draw();
-      ball.update();
-    }
-  
-    requestAnimationFrame(loop);
-  }
-     
+ 
 class Ball{
 constructor(x,y,velX,velY,color,size) {
     this.x=x;
@@ -38,7 +27,19 @@ constructor(x,y,velX,velY,color,size) {
     this.color=color;
     this.size=size;
     }
-    
+    collisionDetect() {
+        for (const ball of balls) {
+          if (this !== ball) {
+            const dx = this.x - ball.x;
+            const dy = this.y - ball.y;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+      
+            if (distance < this.size + ball.size) {
+              ball.color = this.color = randomRGB();
+            }
+          }
+        }
+      }
     
     draw() {
         ctx.beginPath();
@@ -82,5 +83,20 @@ constructor(x,y,velX,velY,color,size) {
 
     balls.push(ball);
   }
+
+  
+  function loop() {
+    ctx.fillStyle = "rgb(0 0 0 / 25%)";
+    ctx.fillRect(0, 0, width, height);
+  
+    for (const ball of balls) {
+      ball.draw();
+      ball.update();
+      ball.collisionDetect();
+    }
+  
+    requestAnimationFrame(loop);
+  }
+    
     
 loop();
