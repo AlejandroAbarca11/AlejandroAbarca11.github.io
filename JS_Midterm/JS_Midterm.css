@@ -8,7 +8,7 @@ body{
     display:grid;
     place-content: center;
     height: 100vh;
-    background-color: rgb(59, 129, 175);
+    background-color:#3d405b;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 
@@ -34,17 +34,18 @@ body{
     width:50em;
     height: 15em;
     margin: 10px;
-    background-color: gray;
+    background-color: #e07a5f;
     border-radius: 25px;
 }
 .inner_box .question{
     margin: 5px;
     align-self: center;
+    font-size: 22px;
 }
 .inner_box .display{
     display: flex;
     width: 47em;
-    height: 15em;
+    height: 12em;
     align-items: center;
     margin: 0 1.5em 0 1.5em;
 }
@@ -57,12 +58,54 @@ body{
     background-color: blanchedalmond;
 
 }
-.display p{
-    margin: 25px 3em 25px 3em;
-    color: black;
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.arr {
+    position: relative;
+    background:  blanchedalmond;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 8px;
+    transition: 0.4s ease;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: #3d405b;
+
+}
+.arr:hover{
+    box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.137);
+}
+
+#enter{
+font-size: 20px;
+  padding: 0.5em 1em;
+  margin: 1em;
+  border-radius: 1em;
+
+  background:  blanchedalmond;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+#enter:hover{
+  background:  #e07a5f;
+  color: blanchedalmond;
+}
+
+.display div{
+    align-self: center;
+    width: 5em;
+    color:  blanchedalmond;
     font-size:45px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 .instructor{
     align-self: center;
+    font-size: 22px;
 }

@@ -1,31 +1,30 @@
 
 const instructions = document.querySelector('.instructor');
-const button = document.getElementById('enter')
-let volume= document.querySelector('.volume');
+const button = document.getElementById('enter');
+let vol = document.querySelector('.container');
+let diap = document.querySelector('.container');
 
 
-volume= 50;
+vol.style.display= 'none';
 
 function random(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
-  
 
 button.addEventListener('click',calculate);
-const randomNum = random(1,10);
 
-
-
+let randomNum = random(1,10);
 function calculate(){
-
     const inputNum = document.getElementById('input').value;
    
     console.log(inputNum);
     if (inputNum>0){
         if (inputNum == randomNum){
-        instructions.innerHTML= "Yor are Right!!";
+
+        instructions.innerHTML= "Yor are Right!! Now you can change The volume";
         console.log(randomNum); 
-        volumeChange();
+        vol.style.display= 'block';
+
         }
         else{
             instructions.innerHTML= "WRONG! try again";
@@ -37,22 +36,16 @@ function calculate(){
   }
 }
 
-function volumeChange (){
-    const question = document.querySelector(".question");
-    question.innerHTML="Do you want to turn the volume up or down?(up or down)";
-    const input =document.getElementById('input');
-    button.addEventListener('click',function(){
-    if(input=="up"||"Up"){
-        volume+=1;
-        console.log("yvolume is "+volume)
-        volume.innerHTML=volume +"%";
-    }
-    else if(input=="down"||"Down"){
-        volume -=1;
-        volume.innerHTML= volume +"%";
-    }
-    else{
-        alert("Wrong! up or down");
-}
-    });
+function totalClick(click){
+    const question = document.querySelector('.question');
+    const volume= document.getElementById('volume');
+    const sumValue = parseInt(volume.innerText)+click;
+    console.log(sumValue + click);
+    volume.innerHTML=sumValue +"%";
+    vol.style.display= 'none';
+    randomNum = random(1,10);
+    instructions.innerHTML= ". . .";
+    question.innerHTML="Guess again to change the volume";
+
+
 }
