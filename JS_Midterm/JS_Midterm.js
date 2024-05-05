@@ -26,8 +26,12 @@ function calculate(){
         vol.style.display= 'block';
 
         }
-        else{
-            instructions.innerHTML= "WRONG! try again";
+        else if(inputNum < randomNum){
+            instructions.innerHTML= "WRONG! TOO LOW, TRY AGAIN";
+            console.log(randomNum);
+        }
+        else if(inputNum > randomNum){
+            instructions.innerHTML= "WRONG! TOO HIGH, TRY AGAIN";
             console.log(randomNum);
         }
   }
